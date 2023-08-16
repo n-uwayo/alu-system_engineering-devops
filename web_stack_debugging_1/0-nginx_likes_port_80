@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Changes port in Nginx
+sudo sed -i 's/listen 80 default_server;/listen 80;/g' /etc/nginx/sites-available/defaultsudo systemctl restart nginx
+sudo systemctl restart nginx
+sudo systemctl status nginx
